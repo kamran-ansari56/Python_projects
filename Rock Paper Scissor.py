@@ -14,3 +14,10 @@ choice = int(input("Enter your choice: "))
 # Looping until user enters valid input:
 while choice > 3 and choice <1:
     choice = int(input('Enter a valid choice: '))
+
+if choice == 1:
+    choice_name == 'Rock'
+elif choice == 2:
+    choice_name == 'Paper'
+else:
+    choice_name = 'Scissors'
