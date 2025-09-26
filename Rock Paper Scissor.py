@@ -21,3 +21,7 @@ elif choice == 2:
     choice_name == 'Paper'
 else:
     choice_name = 'Scissors'
+
+     # Print user choice
+    print('User choice is:', choice_name)
+    print("Now it's Computer's Turn...")
