@@ -25,3 +25,5 @@ else:
      # Print user choice
     print('User choice is:', choice_name)
     print("Now it's Computer's Turn...")
+
+    comp_choice = random.randint(1, 3)
