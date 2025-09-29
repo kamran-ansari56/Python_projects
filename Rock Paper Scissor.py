@@ -16,9 +16,9 @@ while True:
         choice = int(input('Enter a valid choice: '))
 
     if choice == 1:
-        choice_name == 'Rock'
+        choice_name = 'Rock'
     elif choice == 2:
-        choice_name == 'Paper'
+        choice_name = 'Paper'
     else:
         choice_name = 'Scissors'
 
@@ -38,3 +38,32 @@ while True:
 
         print("Computer choice is:", comp_choice_name)
         print(choice_name, 'vs', comp_choice_name)
+
+
+            # Determine the winner
+        if choice == comp_choice:
+            result = "DRAW"
+        elif (choice == 1 and comp_choice == 2) or (comp_choice == 1 and choice == 2):
+            result = 'Paper'
+        elif (choice == 1 and comp_choice == 3) or (comp_choice == 1 and choice == 3):
+            result = 'Rock'
+        elif (choice == 2 and comp_choice == 3) or (comp_choice == 2 and choice == 3):
+            result = 'Scissors'
+
+
+            # Print the result
+        if result == "DRAW":
+            print("<== It's a tie! ==>")
+        elif result == choice_name:
+            print("<== User wins! ==>")
+        else:
+            print("<== Computer wins! ==>")
+
+        # Ask if the user wants to play again
+        print("Do you want to play again? (Y/N)")
+        ans = input().lower()
+        if ans == 'n':
+            break
+
+    # After coming out of the while loop, print thanks for playing
+    print("Thanks for playing!")
